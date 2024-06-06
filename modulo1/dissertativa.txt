@@ -1,0 +1,5 @@
+1. Leia e armazene o valor de n que deseja ser o multiplicador na tabuada do 9. #Entrada
+2. Subtraia n-1 e armazene como digito1. #Processamento
+3. Subtraia 10-n e armazene como digito2. #Processamento
+4. Calcule o resultado final multiplicando o digito1 por 10 e somando com o digito2. #Processamento
+5. Apresente o resultado final e encerre o programa. #Saída
