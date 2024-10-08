@@ -1,20 +1,21 @@
-n=int(input("Digite a quantidade de experimentos: "))
-cont,qnt,c,r,s = 0,0,0,0,0
+experimentos = int(input("Digite a quantidade de experimentos: "))
 
-while n != cont:
-    tipo=input("Qual animal foi utilizado: (C) coelho,(R) rato ou (S) sapo: ")
-    qnt=int(input("Digite a quantidade de cobaias utilizadas: "))
-    
-    cont +=1
+contador,quantidade,c,r,s = 0,0,0,0,0
+
+while experimentos != contador:
+    tipo = input("Qual animal foi utilizado? (C) Coelho, (R) Rato ou (S) Sapo: ")
+    quantidade = int(input("Digite a quantidade de cobaias utilizadas: "))
+
+    contador +=1
     if tipo=="c" or tipo=="C":
-        c+=qnt
+        c += quantidade
     elif tipo=="r" or tipo=="R":
-        r+=qnt
-    elif tipo=="s" or tipo=="S":
-        s+=qnt
+        r += quantidade
+    elif tipo+"s" or tipo=="S":
+        s += quantidade
 
-total=s+c+r
+total = c+r+s
 
-print(f"\nTotal de cobaias utilizadas: {total}")
-print(f"Foram utilizados {c} coelhos, {r} ratos e {s} sapos")
-print(f"Sapos representam {s/total*100:2.2f}%, coelhos representam {c/total*100:2.2f}% e ratos representam {r/total*100:2.2f}%.")
+print (f'O número total de cobaias utilizadas foi de {total}.')
+print (f'Foram utilizados {c} Coelhos, {r} Ratos e {s} Sapos.')
+print (f'Percentual de Coelhos: {c/total*100:2.2f}% / Percentual de Ratos: {r/total*100:2.2f}% / Percentual de Sapos: {s/total*100:2.2f}%')
