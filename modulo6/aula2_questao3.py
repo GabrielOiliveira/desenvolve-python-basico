@@ -16,4 +16,4 @@ print("Interseccao:", interseccao)
 
 print("Contagem:")
 for num in interseccao:
-    print(f"{num}: (lista1={contagem1[num]}, lista2={contagem2[num]})")
+    print(f"{num}: (Lista 1 = {contagem1[num]}, Lista 2 = {contagem2[num]})")
