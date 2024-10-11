@@ -1,5 +1,4 @@
 import os
-import string
 
 caminho_frase = os.path.join(os.getcwd(), "frase.txt")
 caminho_palavras = os.path.join(os.getcwd(), "palavras.txt")
